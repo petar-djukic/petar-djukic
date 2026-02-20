@@ -10,11 +10,11 @@ These are independent projects I build in my own time.
 
 **[cobbler](https://github.com/petar-djukic/cobbler)** — A coding agent orchestrator. Manages multi-agent workflows using the Anthropic API, coordinating Claude Code instances through structured agent loops. Handles context window budgeting, task routing, and session continuity across parallel execution.
 
-**[crumbs](https://github.com/petar-djukic/crumbs)** — A Go library for agent task management. Differs from existing tools by supporting backtracking — agents can revisit and revise earlier decisions rather than treating task completion as one-directional. Built for use with LLM orchestration pipelines.
+**[crumbs](https://github.com/petar-djukic/crumbs)** — A Go library for agent task management. Differs from existing tools by supporting backtracking — agents can revisit and revise earlier decisions rather than treating task completion as one-directional. Built for use with LLM orchestration pipelines. Generated entirely from specification using a semi-manual orchestrator (L3→L4: the system proposed its own work breakdown from documented intent, with human review before execution).
 
 **[cobbler-constitutions](https://github.com/petar-djukic/cobbler-constitutions)** — Templates and schemas for large software specification, designed to be ingestible by coding agents. Similar in intent to git-spec-kit but structured around the full specification lifecycle. Currently testing the lifecycle using a prototype cobbler instance running against these constitutions.
 
-**[mcp-calc](https://github.com/petar-djukic/mcp-calc)** — A production-grade Model Context Protocol server and agent. 8,000 lines of Go, fully tested. Built using the architecture-first methodology described in my writing.
+**[mcp-calc](https://github.com/petar-djukic/mcp-calc)** — A production-grade Model Context Protocol server and agent. 8,000 lines of Go, fully tested. Generated entirely from specification using a manual orchestrator (L3: human-scheduled tasks, agent-implemented). The methodology is described in [The Architecture-First Approach](https://meshintelligence.substack.com/p/the-architecture-first-approach).
 
 ## Writing
 
