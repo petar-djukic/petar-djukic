@@ -14,6 +14,8 @@ These are independent projects I build in my own time.
 
 **[cobbler-constitutions](https://github.com/petar-djukic/cobbler-constitutions)** — Templates and schemas for large software specification, designed to be ingestible by coding agents. Similar in intent to git-spec-kit but structured around the full specification lifecycle. Currently testing the lifecycle using a prototype cobbler instance running against these constitutions.
 
+**[research-engine](https://github.com/petar-djukic/research-engine)** — An end-to-end research workflow backed by a structured knowledge base. Claude generates tools, skills, and retrieval context on demand as research questions arise — rather than pre-defining them via MCP. An active experiment in whether dynamic tool generation makes static tool registries obsolete.
+
 **[mcp-calc](https://github.com/petar-djukic/mcp-calc)** — A production-grade Model Context Protocol server and agent. 8,000 lines of Go, fully tested. Generated entirely from specification using a manual orchestrator (L3: human-scheduled tasks, agent-implemented). The methodology is described in [The Architecture-First Approach](https://meshintelligence.substack.com/p/the-architecture-first-approach).
 
 ## Writing
