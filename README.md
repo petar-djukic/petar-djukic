@@ -26,9 +26,6 @@ I write about production AI systems at [Mesh Intelligence](https://meshintellige
 - [What Level of Autonomy Is Your AI Development Workflow?](https://meshintelligence.substack.com/p/what-level-of-autonomy-is-your-ai) — Applying the TM Forum autonomous networks taxonomy to agentic coding workflows
 - [Three Commands to a Crude Orchestrator](https://meshintelligence.substack.com/p/three-commands-to-a-crude-orchestrator) — How three Claude skills compose into an agent loop that ships production code
 - [The Architecture-First Approach](https://meshintelligence.substack.com/p/the-architecture-first-approach) — Spec-driven development with LLM orchestration: architect first, generate second
-- [Running Multiple Claude Code Accounts with Containers](https://meshintelligence.substack.com/p/running-multiple-claude-code-accounts) — Docker setup for running multiple Claude Code instances with separate credentials
-- [The Hidden Cost of Replacing Junior Developers with AI](https://meshintelligence.substack.com/p/the-hidden-cost-of-replacing-junior) — Why replacing juniors with AI-assisted seniors destroys organizational resilience
-- [Your AI Project Failed Before You Started](https://meshintelligence.substack.com/p/your-ai-project-failed-before-you) — Organizational dysfunction, not immature technology, kills AI projects
 
 ## Stack
 
