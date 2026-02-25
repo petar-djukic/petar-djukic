@@ -1,6 +1,6 @@
 # Petar Djukic
 
-Principal Architect. 20 years building production systems. PhD in Computer Engineering. 64 US patents.
+Principal Architect. 20 years building production systems. PhD in Computer Engineering. 67 US patents.
 
 I build agentic orchestration systems as a side project — driven by genuine interest and the fact that coding agents make ambitious personal projects tractable for one person.
 
