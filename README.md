@@ -12,7 +12,7 @@ These are independent projects I build in my own time.
 
 **[crumbs](https://github.com/petar-djukic/crumbs)** — A Go library for agent task management. Differs from existing tools by supporting backtracking — agents can revisit and revise earlier decisions rather than treating task completion as one-directional. Built for use with LLM orchestration pipelines. Generated entirely from specification using a semi-manual orchestrator (L3→L4: the system proposed its own work breakdown from documented intent, with human review before execution).
 
-**[cobbler-constitutions](https://github.com/petar-djukic/cobbler-constitutions)** — Templates and schemas for large software specification, designed to be ingestible by coding agents. Similar in intent to git-spec-kit but structured around the full specification lifecycle. Currently testing the lifecycle using a prototype cobbler instance running against these constitutions.
+**[cobbler-scaffold](https://github.com/petar-djukic/cobbler-scaffold)** — Specification constitutions and Mage orchestration for cobbler. YAML schemas govern Claude across design, planning, and execution phases. Implements measure-stitch: specs in, working code out.
 
 **[research-engine](https://github.com/petar-djukic/research-engine)** — An end-to-end research workflow backed by a structured knowledge base. Claude generates tools, skills, and retrieval context on demand as research questions arise — rather than pre-defining them via MCP. An active experiment in whether dynamic tool generation makes static tool registries obsolete.
 
@@ -22,9 +22,13 @@ These are independent projects I build in my own time.
 
 I write about production AI systems at [Mesh Intelligence](https://meshintelligence.substack.com).
 
+- [IT DOESN'T MATTER What Your Favourite Programming Language Is](https://meshintelligence.substack.com/p/it-doesnt-matter-what-your-favourite) — Choose languages based on what works with your AI tools, not personal preference
+- [What Level of Autonomy Is Your AI Development Workflow?](https://meshintelligence.substack.com/p/what-level-of-autonomy-is-your-ai) — Applying the TM Forum autonomous networks taxonomy to agentic coding workflows
 - [Three Commands to a Crude Orchestrator](https://meshintelligence.substack.com/p/three-commands-to-a-crude-orchestrator) — How three Claude skills compose into an agent loop that ships production code
 - [The Architecture-First Approach](https://meshintelligence.substack.com/p/the-architecture-first-approach) — Spec-driven development with LLM orchestration: architect first, generate second
-- [What Level Is Your AI Development Workflow?](https://meshintelligence.substack.com) — Applying the TM Forum autonomous networks taxonomy to agentic coding workflows
+- [Running Multiple Claude Code Accounts with Containers](https://meshintelligence.substack.com/p/running-multiple-claude-code-accounts) — Docker setup for running multiple Claude Code instances with separate credentials
+- [The Hidden Cost of Replacing Junior Developers with AI](https://meshintelligence.substack.com/p/the-hidden-cost-of-replacing-junior) — Why replacing juniors with AI-assisted seniors destroys organizational resilience
+- [Your AI Project Failed Before You Started](https://meshintelligence.substack.com/p/your-ai-project-failed-before-you) — Organizational dysfunction, not immature technology, kills AI projects
 
 ## Stack
 
