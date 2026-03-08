@@ -4,17 +4,40 @@ Principal Architect. 20 years building production systems. PhD in Computer Engin
 
 I build agentic orchestration systems as a side project — driven by genuine interest and the fact that coding agents make ambitious personal projects tractable for one person.
 
-## Projects
+## How the projects fit together
 
-These are independent projects I build in my own time.
+```mermaid
+graph TD
+    CS[cobbler-scaffold<br><i>specs & constitutions</i>] -->|governs| C[cobbler<br><i>agent orchestrator</i>]
+    C -->|measure-stitch| GUU[go-unix-utils<br><i>38 commands, 18K LOC</i>]
+    C -->|orchestrates| CR[crumbs<br><i>task management</i>]
+    CR -->|backtracking support| C
+    RA[research-agent<br><i>dynamic tool generation</i>] -.->|same pattern:<br>agent loop| C
+    CS -->|test fixture| SHW[sdd-hello-world<br><i>minimal SDD project</i>]
+
+    style C fill:#2d5016,stroke:#4a8c2a,color:#fff
+    style CS fill:#1a3a5c,stroke:#2a6cb0,color:#fff
+    style GUU fill:#5c3a1a,stroke:#b07a2a,color:#fff
+    style CR fill:#1a3a5c,stroke:#2a6cb0,color:#fff
+    style RA fill:#4a2a4a,stroke:#8c4a8c,color:#fff
+    style SHW fill:#3a3a3a,stroke:#6a6a6a,color:#fff
+```
+
+cobbler is a coding agent orchestrator. cobbler-scaffold provides the YAML specifications and constitutions that govern it. Together they implement a measure-stitch pipeline: the measure agent proposes work from specs, the stitch agent generates code. go-unix-utils is the primary output — 38 Unix utilities regenerated in Go and verified against GNU reference binaries via differential testing. crumbs provides task management with backtracking for the agent loops. research-agent applies the same agent-driven approach to research workflows, generating its own tools on demand rather than relying on pre-defined MCP registries.
+
+## Projects
 
 **[cobbler](https://github.com/petar-djukic/cobbler)** — A coding agent orchestrator. Manages multi-agent workflows using the Anthropic API, coordinating Claude Code instances through structured agent loops. Handles context window budgeting, task routing, and session continuity across parallel execution.
 
-**[crumbs](https://github.com/petar-djukic/crumbs)** — A Go library for agent task management. Differs from existing tools by supporting backtracking — agents can revisit and revise earlier decisions rather than treating task completion as one-directional. Built for use with LLM orchestration pipelines. Generated entirely from specification using a semi-manual orchestrator (L3→L4: the system proposed its own work breakdown from documented intent, with human review before execution).
-
 **[cobbler-scaffold](https://github.com/petar-djukic/cobbler-scaffold)** — Specification constitutions and Mage orchestration for cobbler. YAML schemas govern Claude across design, planning, and execution phases. Implements measure-stitch: specs in, working code out.
 
-**[research-engine](https://github.com/petar-djukic/research-engine)** — An end-to-end research workflow backed by a structured knowledge base. Claude generates tools, skills, and retrieval context on demand as research questions arise — rather than pre-defining them via MCP. An active experiment in whether dynamic tool generation makes static tool registries obsolete.
+**[go-unix-utils](https://github.com/petar-djukic/go-unix-utils)** — Go reimplementations of 38 GNU coreutils utilities, generated from specification using cobbler. Each command is verified for functional parity against the GNU reference binary via differential testing. 18,000 lines across 17 releases, all produced through the measure-stitch pipeline.
+
+**[crumbs](https://github.com/petar-djukic/crumbs)** — A Go library for agent task management. Supports backtracking — agents can revisit and revise earlier decisions rather than treating task completion as one-directional. Built for use with LLM orchestration pipelines. Generated entirely from specification using cobbler.
+
+**[research-agent](https://github.com/petar-djukic/research-agent)** — An end-to-end research workflow backed by a structured knowledge base. Claude generates tools, skills, and retrieval context on demand as research questions arise — rather than pre-defining them via MCP. An active experiment in whether dynamic tool generation makes static tool registries obsolete.
+
+**[sdd-hello-world](https://github.com/petar-djukic/sdd-hello-world)** — Minimal spec-driven development test fixture for cobbler-scaffold. A toy project that exercises the full measure-stitch pipeline end-to-end without the complexity of a real codebase.
 
 **[mcp-calc](https://github.com/petar-djukic/mcp-calc)** — A production-grade Model Context Protocol server and agent. 8,000 lines of Go, fully tested. Generated entirely from specification using a manual orchestrator (L3: human-scheduled tasks, agent-implemented). The methodology is described in [The Architecture-First Approach](https://meshintelligence.substack.com/p/the-architecture-first-approach).
 
