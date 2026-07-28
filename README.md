@@ -61,6 +61,11 @@ The projects are at different stages of maturity:
 
 I write about production AI systems at [Mesh Intelligence](https://meshintelligence.substack.com).
 
+- [How to Use Git Worktrees with Coding Agents](https://meshintelligence.substack.com/p/how-to-use-git-worktrees-with-coding) — One checkout per agent: why parallel coding agents need git worktrees, and where shared checkouts and full clones break
+- [How to Loop Engineering](https://meshintelligence.substack.com/p/how-to-loop-engineering) — The human is the loop: running an agent loop with four commands in Claude Code or OpenCode, and staying in charge of it
+- [How to Code with GLM 5.2 on OpenCode](https://meshintelligence.substack.com/p/how-to-glm-52-on-opencode) — Decide the architecture and interfaces first, then let a cheap local model write the code on a fixed Ollama plan
+- [The Loop Is the Easy Part](https://meshintelligence.substack.com/p/the-loop-is-the-easy-part) — Every coding agent has the same fifty-line loop; the harness is the engineering
+- [What Five Coding Agents Taught Me About Building My Own](https://meshintelligence.substack.com/p/what-five-coding-agents-taught-me) — Aider, Goose, SWE-agent, OpenHands, OpenCode, and Claude Code converge on one architecture, and most of it may be unnecessary
 - [The Architecture-First Approach](https://meshintelligence.substack.com/p/the-architecture-first-approach) — Spec-driven development with LLM orchestration: architect first, generate second
 - [Dude, Where's My Code?](https://meshintelligence.substack.com/p/dude-wheres-my-code) — After 320,000 lines generated and deleted, specs are the source and code is the binary
 - [What Level of Autonomy Is Your AI Development Workflow?](https://meshintelligence.substack.com/p/what-level-of-autonomy-is-your-ai) — A six-level taxonomy for agentic coding, from autocomplete to full autonomy
