@@ -1,8 +1,12 @@
 # Petar Djukic
 
-Principal Architect. 20 years building production systems. PhD in Computer Engineering. 67 US patents.
+Principal AI Architect. 20+ years building production systems. PhD in Computer Engineering. 69 US patents.
 
-I build agentic orchestration systems as a side project — driven by genuine interest and the fact that coding agents make ambitious personal projects tractable for one person.
+I design agentic systems that hold up in production — the part that comes after the demo.
+
+**[declarative-agents](https://github.com/Nokia-Bell-Labs/declarative-agents)** — I designed and built this agent framework; **Nokia Bell Labs open-sourced it.** Agents are verifiable state machines: states, signals, and transitions declared in YAML and checked before they run — no dead states, no unhandled signals. Every run is traced end-to-end with OpenTelemetry and can be rolled back. Tools are declared the same way: typed inputs, outputs, side effects, and an undo. Written in Go — built for places where a free-running agent is not acceptable.
+
+Independently, I build a spec-driven code-generation toolchain — coding agents make an ambitious project the work of one person.
 
 ## How the projects fit together
 
