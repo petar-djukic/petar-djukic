@@ -53,6 +53,10 @@ The projects are at different stages of maturity:
 
 **[research-agent](https://github.com/petar-djukic/research-agent)** — An end-to-end research workflow backed by a structured knowledge base. Claude generates tools, skills, and retrieval context on demand as research questions arise — rather than pre-defining them via MCP. An active experiment in whether dynamic tool generation makes static tool registries obsolete.
 
+**[coding-skills](https://github.com/petar-djukic/coding-skills)** — Claude Code slash commands for spec-driven development through GitHub issues and pull requests. An issue-per-change workflow — `make-work` plans units, `gh-issue-push` writes them as issues with acceptance criteria, `gh-issue-pop` executes each in its own git worktree and opens the PR — mirrored to Cursor, OpenCode, Codex, and GitHub Copilot from one canonical tree.
+
+**[writing-skills](https://github.com/petar-djukic/writing-skills)** — Claude Code skills that rewrite AI-drafted prose until it reads as human, measured against the Pangram AI detector. A three-step pipeline — structural rewrite, AI-tell removal, cross-model diction — with detector scores recorded before and after each step, plus reference management and citation auditing against a CSL-YAML bibliography.
+
 **[sdd-hello-world](https://github.com/petar-djukic/sdd-hello-world)** — Minimal spec-driven development test fixture for cobbler-scaffold. A toy project that exercises the full measure-stitch pipeline end-to-end without the complexity of a real codebase.
 
 **[mcp-calc](https://github.com/petar-djukic/mcp-calc)** — A production-grade Model Context Protocol server and agent. 8,000 lines of Go, fully tested. Generated entirely from specification using a manual orchestrator (L3: human-scheduled tasks, agent-implemented). The methodology is described in [The Architecture-First Approach](https://meshintelligence.substack.com/p/the-architecture-first-approach).
@@ -61,6 +65,8 @@ The projects are at different stages of maturity:
 
 I write about production AI systems at [Mesh Intelligence](https://meshintelligence.substack.com).
 
+- [How to Build a Writing Pipeline](https://meshintelligence.substack.com/p/how-to-build-a-writing-pipeline) — Writing and fact-checking an article with AI: a draft, a hostile critic that checks every citation, a voice pass, and an SEO pass, behind a human gate
+- [How to Stay on Track with Opus 5](https://meshintelligence.substack.com/p/how-to-stay-on-track-with-opus-5) — Opus 5 reads your instructions, agrees with your corrections, then does what it was going to do anyway; the fix is not a better argument
 - [How to Use Git Worktrees with Coding Agents](https://meshintelligence.substack.com/p/how-to-use-git-worktrees-with-coding) — One checkout per agent: why parallel coding agents need git worktrees, and where shared checkouts and full clones break
 - [How to Loop Engineering](https://meshintelligence.substack.com/p/how-to-loop-engineering) — The human is the loop: running an agent loop with four commands in Claude Code or OpenCode, and staying in charge of it
 - [How to Code with GLM 5.2 on OpenCode](https://meshintelligence.substack.com/p/how-to-glm-52-on-opencode) — Decide the architecture and interfaces first, then let a cheap local model write the code on a fixed Ollama plan
