@@ -67,8 +67,12 @@ The projects are at different stages of maturity:
 
 ## Writing
 
-I write about production AI systems at [Mesh Intelligence](https://meshintelligence.substack.com?utm_source=github&utm_campaign=petar-djukic).
+I write about production AI systems at [Mesh Intelligence](https://meshintelligence.substack.com?utm_source=github&utm_campaign=petar-djukic). New reader? [Start Here](https://meshintelligence.substack.com/p/start-here?utm_source=github&utm_campaign=petar-djukic) maps the three tracks.
 
+- [How to Use Harness Engineering to Remove AI Tells](https://meshintelligence.substack.com/p/how-to-use-harness-engineering-to?utm_source=github&utm_campaign=petar-djukic) — The three layers where AI tells live, the scripts that catch them, and the judgment call no script can make
+- [Spec-Driven Development with GitHub, Claude, and GLM on OpenCode](https://meshintelligence.substack.com/p/spec-driven-development-with-github?utm_source=github&utm_campaign=petar-djukic) — A live-demo tutorial: four commands take a specification tree to a merged pull request, then hand the same issue to GLM 5.2 on OpenCode
+- [How to Use GitHub to Give a Coding Agent Recurring Work](https://meshintelligence.substack.com/p/how-to-use-github-to-give-a-coding?utm_source=github&utm_campaign=petar-djukic) — Recurring GitHub issues as standing work orders: the issue holds the spec, the agent executes, and closing it creates the next instance
+- [How to Use GitHub as Long-Term Memory for Coding Agents](https://meshintelligence.substack.com/p/how-to-use-github-as-long-term-memory?utm_source=github&utm_campaign=petar-djukic) — Coding agents forget everything between sessions; choosing what the next session reads, and the GitHub artifacts that hold it
 - [How to Build a Writing Pipeline](https://meshintelligence.substack.com/p/how-to-build-a-writing-pipeline?utm_source=github&utm_campaign=petar-djukic) — Writing and fact-checking an article with AI: a draft, a hostile critic that checks every citation, a voice pass, and an SEO pass, behind a human gate
 - [How to Stay on Track with Opus 5](https://meshintelligence.substack.com/p/how-to-stay-on-track-with-opus-5?utm_source=github&utm_campaign=petar-djukic) — Opus 5 reads your instructions, agrees with your corrections, then does what it was going to do anyway; the fix is not a better argument
 - [How to Use Git Worktrees with Coding Agents](https://meshintelligence.substack.com/p/how-to-use-git-worktrees-with-coding?utm_source=github&utm_campaign=petar-djukic) — One checkout per agent: why parallel coding agents need git worktrees, and where shared checkouts and full clones break
